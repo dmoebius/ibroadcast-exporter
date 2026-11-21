@@ -1,0 +1,22 @@
+{
+  "name": "ibroadcast-exporter",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Export a personal iBroadcast music library (Originals + Cover Art) into a local directory",
+  "type": "module",
+  "bin": {
+    "ibroadcast-exporter": "src/cli.ts"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node src/cli.ts",
+    "test": "node --test test/",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "typescript": "^7.0.2"
+  }
+}
